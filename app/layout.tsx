@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { siteOrigin } from '../lib/site-url';
 
-const origin = process.env.SITE_URL ? new URL(process.env.SITE_URL) : undefined;
+const origin = siteOrigin(process.env.SITE_URL);
 export const metadata: Metadata = {
   metadataBase: origin,
   title: 'Rene Christian — Computer Engineering & AI Automation',
