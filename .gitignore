@@ -1,0 +1,14 @@
+.superpowers/
+.verification/
+node_modules/
+.next/
+out/
+dist/
+test-results/
+playwright-report/
+.env*
+!.env.example
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+.taste-skill/
