@@ -1,0 +1,695 @@
+[
+ {
+  "vw": 1440,
+  "vh": 900,
+  "L": 85,
+  "R": 1355,
+  "nav": 0,
+  "screen": 900,
+  "hero": {
+   "height": 617,
+   "h1": {
+    "size": 70,
+    "leading": 1.02,
+    "lines": 2,
+    "x": 123,
+    "y": 214,
+    "w": 575,
+    "h": 143
+   },
+   "lead": null,
+   "buttons": null,
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "#home section.hero \"Computer Engineering Student · A\"",
+    "top": 108,
+    "height": 617,
+    "content": 545,
+    "frame": 0
+   },
+   {
+    "where": "#featured section.featured.section \"01 / Selected workA closer look \"",
+    "top": 725,
+    "height": 2184,
+    "content": 2005,
+    "frame": 725
+   },
+   {
+    "where": "#projects section.project-index.section \"02 / Project indexThe wider coll\"",
+    "top": 2909,
+    "height": 4085,
+    "content": 3907,
+    "frame": 2909
+   },
+   {
+    "where": "#about section.about.section \"03 / The engineerConnecting the \"",
+    "top": 6994,
+    "height": 702,
+    "content": 519,
+    "frame": 6994
+   },
+   {
+    "where": "#activity section.activity.section \"04 / GitHub activityAn ongoing p\"",
+    "top": 7696,
+    "height": 589,
+    "content": 362,
+    "frame": 7696
+   }
+  ],
+  "findings": [
+   {
+    "rule": "edge-left",
+    "where": "#home h1 \"Code. Systems.Automation.\"",
+    "detail": "starts at x 123; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#home p.hero-intro \"I’m Rene Christian.\"",
+    "detail": "starts at x 123; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#home p.hero-description \"I build AI workflows and softwar\"",
+    "detail": "starts at x 123; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured h2 \"A closer look at the work.\"",
+    "detail": "x 75 to 519.9, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p \"Three projects. My contribution,\"",
+    "detail": "x 1165 to 1365, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured h3 \"Bej Hub\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p.case-problem \"Turn a writing request into an e\"",
+    "detail": "x 75 to 555, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p \"I built this personal project wi\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p \"In a live Gemini run, the workfl\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured ul.stack-list \"TypeScriptDiscord.jsGeminiNext.j\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured h3 \"OmniPoint\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p.case-problem \"Keep an offline sale and its ori\"",
+    "detail": "x 75 to 555, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p \"I created this personal project \"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p \"Local verification passed 21 int\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured ul.stack-list \"TypeScriptNode.jsSQLitePostgreSQ\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured h3 \"Smart Pill Dispenser\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p.case-problem \"Connect a physical dispensing me\"",
+    "detail": "x 75 to 555, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p \"In our Code&Craft team, I progra\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured p \"All required functions were succ\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#featured ul.stack-list \"Raspberry PiPythonSMSTelegram\"",
+    "detail": "x 75 to 630.3, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#projects h2 \"The wider collection.\"",
+    "detail": "x 75 to 440.4, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#projects p \"Software, hardware, AI experimen\"",
+    "detail": "x 1139.3 to 1365, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#projects p \"29 entries shown\"",
+    "detail": "x 75 to 171.1, the page runs 85 to 1355"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Bej Hub\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A pixel studio for assigning AI \"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"TypeScriptDiscord.jsGeminiNext.j\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Smart Pill Dispenser\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A Raspberry Pi device connecting\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"Raspberry PiPythonSMSTelegram\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Raspberry Pi / Arduino Fish Tank\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"An embedded project connecting w\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"Raspberry PiArduino UnoPythonSen\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"MATLAB SVD Image Compression\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"An image-processing experiment u\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"MATLABSVDLinear algebra\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"FormSight\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A computer-vision prototype for \"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"PythonFastAPIOpenCVYOLO\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Pundo 2\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A personal-finance app exploring\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"Next.jsReactTypeScriptGemini\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Student Grading Software\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A desktop project for organizing\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"JavaSQL\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Verilog Dice Game\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A digital dice-game experiment u\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"VerilogLFSRModelSim\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Genetic Algorithm Snake\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A game-playing experiment that e\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"PythonPygameGenetic algorithms\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"8086 Calculator\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"An assembly-language calculator \"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"AssemblyEMU8086\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Divvy\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A personal-finance web project f\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"ReactTypeScriptVite\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"FreelanceFlow\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A web project exploring project \"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"Next.jsTypeScript\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Bej Planner\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A mobile planner prototype with \"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"React NativeExpoJavaScript\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"MLBB Pick & Ban Overlay\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A broadcast-overlay project for \"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"JavaScriptHTMLCSSNode.js\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"MLBB Tournament Overlay\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"An esports broadcast project exp\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"OCRBroadcast overlays\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"TourneyForge\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"An esports graphics project comb\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"Next.jsTypeScriptFabric.jsOBS We\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Asay\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A reserved project concept. The \"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Alagad\"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A reserved project concept. The \"",
+    "detail": "starts at x 972.3; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects h3 \"Bej Vault\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects p \"A knowledge workspace for organi\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#projects ul.mini-stack \"ObsidianMarkdown\"",
+    "detail": "starts at x 99; the lines are 85 and the column starts"
+   },
+   {
+    "rule": "spill",
+    "where": "#about h2 \"Connecting the pieces.\"",
+    "detail": "x 75 to 485.2, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about p.about-lead \"I’m Rene Christian, a Computer E\"",
+    "detail": "x 75 to 718.2, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about p \"My projects span AI agent workfl\"",
+    "detail": "x 75 to 718.2, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about h3 \"BS Computer Engineering\"",
+    "detail": "x 75 to 718.2, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about p \"University of Mindanao – Tagum C\"",
+    "detail": "x 75 to 718.2, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about h3 \"AI workflows\"",
+    "detail": "x 818.2 to 1365, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about p \"Gemini · TypeScript · Discord.js\"",
+    "detail": "x 818.2 to 1365, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about h3 \"Software & data\"",
+    "detail": "x 818.2 to 1365, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about p \"Node.js · React · SQLite · Postg\"",
+    "detail": "x 818.2 to 1365, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about h3 \"Embedded integration\"",
+    "detail": "x 818.2 to 1365, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#about p \"Raspberry Pi · Python · SMS · Te\"",
+    "detail": "x 818.2 to 1365, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#activity h2 \"An ongoing practice.\"",
+    "detail": "x 75 to 442.2, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#contact h2 \"Let’s talkAI automation.\"",
+    "detail": "x 75 to 439.8, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#contact p \"Have a role where I can build, l\"",
+    "detail": "x 75 to 439.8, the page runs 85 to 1355"
+   },
+   {
+    "rule": "spill",
+    "where": "#contact p.credits \"Smart Pill Dispenser photography\"",
+    "detail": "x 75 to 755, the page runs 85 to 1355"
+   },
+   {
+    "rule": "lines",
+    "where": "page",
+    "detail": "headings and leads start on 2 lines (x 123, 75); the page has 85 and one split line"
+   },
+   {
+    "rule": "screen-short",
+    "where": "#home section.hero \"Computer Engineering Student · A\"",
+    "detail": "617px tall; one screen under the nav is 900px"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#home section.hero \"Computer Engineering Student · A\"",
+    "detail": "framed, 51px of #featured section.featured.section \"01 / Selected workA closer look \" shows"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#featured section.featured.section \"01 / Selected workA closer look \"",
+    "detail": "2184px, 2.43 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#projects section.project-index.section \"02 / Project indexThe wider coll\"",
+    "detail": "4085px, 4.54 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "screen-short",
+    "where": "#about section.about.section \"03 / The engineerConnecting the \"",
+    "detail": "702px tall; one screen under the nav is 900px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#about section.about.section \"03 / The engineerConnecting the \"",
+    "detail": "702px, 0.78 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#about section.about.section \"03 / The engineerConnecting the \"",
+    "detail": "framed, 51px of #activity section.activity.section \"04 / GitHub activityAn ongoing p\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "#activity section.activity.section \"04 / GitHub activityAn ongoing p\"",
+    "detail": "589px tall; one screen under the nav is 900px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#activity section.activity.section \"04 / GitHub activityAn ongoing p\"",
+    "detail": "589px, 0.65 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "hero-fold",
+    "where": "#home section.hero \"Computer Engineering Student · A\"",
+    "detail": "starts at y 108, not under the nav"
+   },
+   {
+    "rule": "hero-fold",
+    "where": "#home section.hero \"Computer Engineering Student · A\"",
+    "detail": "ends at y 725, above the fold (900)"
+   },
+   {
+    "rule": "hero-fold",
+    "where": "#featured section.featured.section \"01 / Selected workA closer look \"",
+    "detail": "shows on the first screen from y 805"
+   }
+  ],
+  "size": "1440x900",
+  "overflowX": false
+ },
+ {
+  "vw": 390,
+  "vh": 844,
+  "L": 16,
+  "R": 374,
+  "nav": 0,
+  "screen": 844,
+  "hero": {
+   "height": 793,
+   "h1": {
+    "size": 45.24,
+    "leading": 1.05,
+    "lines": 2,
+    "x": 40,
+    "y": 221,
+    "w": 310,
+    "h": 95
+   },
+   "lead": null,
+   "buttons": null,
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "#home section.hero \"Computer Engineering Student · A\"",
+    "top": 148,
+    "height": 793,
+    "content": 745,
+    "frame": 0
+   },
+   {
+    "where": "#featured section.featured.section \"01 / Selected workA closer look \"",
+    "top": 941,
+    "height": 3025,
+    "content": 2876,
+    "frame": 941
+   },
+   {
+    "where": "#projects section.project-index.section \"02 / Project indexThe wider coll\"",
+    "top": 3967,
+    "height": 10173,
+    "content": 10059,
+    "frame": 3967
+   },
+   {
+    "where": "#about section.about.section \"03 / The engineerConnecting the \"",
+    "top": 14140,
+    "height": 1127,
+    "content": 1007,
+    "frame": 14140
+   },
+   {
+    "where": "#activity section.activity.section \"04 / GitHub activityAn ongoing p\"",
+    "top": 15267,
+    "height": 536,
+    "content": 395,
+    "frame": 15267
+   }
+  ],
+  "findings": [
+   {
+    "rule": "screen-short",
+    "where": "#home section.hero \"Computer Engineering Student · A\"",
+    "detail": "793px tall; one screen under the nav is 844px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#featured section.featured.section \"01 / Selected workA closer look \"",
+    "detail": "3025px, 3.58 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#projects section.project-index.section \"02 / Project indexThe wider coll\"",
+    "detail": "10173px, 12.05 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills"
+   },
+   {
+    "rule": "screen-short",
+    "where": "#activity section.activity.section \"04 / GitHub activityAn ongoing p\"",
+    "detail": "536px tall; one screen under the nav is 844px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#activity section.activity.section \"04 / GitHub activityAn ongoing p\"",
+    "detail": "536px, 0.63 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills"
+   },
+   {
+    "rule": "hero-fold",
+    "where": "#home section.hero \"Computer Engineering Student · A\"",
+    "detail": "starts at y 148, not under the nav"
+   },
+   {
+    "rule": "hero-fold",
+    "where": "#home section.hero \"Computer Engineering Student · A\"",
+    "detail": "ends at y 941, past the fold (844): 0.94 screens tall"
+   }
+  ],
+  "size": "390x844",
+  "overflowX": false
+ }
+]

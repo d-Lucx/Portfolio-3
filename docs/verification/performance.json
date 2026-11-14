@@ -1,0 +1,292 @@
+{
+ "page": "http://127.0.0.1:3000/",
+ "partial": false,
+ "results": [
+  {
+   "w": 1440,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "89/85 %",
+     "verdict": "WARN",
+     "note": "busy host: timing verdicts capped at WARN, rerun when idle"
+    },
+    {
+     "name": "total transfer",
+     "value": "342.4 KiB",
+     "verdict": "PASS",
+     "note": "html 15.1K  css 5.2K  js 143.3K  img 162.6K  other 16.1K"
+    },
+    {
+     "name": "requests",
+     "value": 23,
+     "verdict": "PASS",
+     "note": "14 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "162.6 KiB",
+     "verdict": "PASS",
+     "note": "12 files"
+    },
+    {
+     "name": "largest image",
+     "value": "31.7 KiB",
+     "verdict": "PASS",
+     "note": "_next/image?url=%2Fprojects%2Fpill-dispenser.webp&w=828&q=75"
+    },
+    {
+     "name": "JS parsed",
+     "value": "472.1 KiB",
+     "verdict": "WARN",
+     "note": "6 files, 143.3K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "5.2 KiB",
+     "verdict": "PASS",
+     "note": "1 files"
+    },
+    {
+     "name": "font families",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "font files",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0K"
+    },
+    {
+     "name": "images without width+height",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0 contexts made in all"
+    },
+    {
+     "name": "long tasks",
+     "value": 1,
+     "verdict": "PASS",
+     "note": "runs 3, 1..1, busy host, max 131ms"
+    },
+    {
+     "name": "blocking time",
+     "value": "66 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 61..81, busy host ms; at load 66ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "1360 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 472..4664, busy host"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "1360 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 472..5648, busy host, img"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.000",
+     "verdict": "PASS",
+     "note": "runs 3, 0.000..0.000; at load 0.000"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "9.8 screens",
+     "verdict": "PASS",
+     "note": "DOM 677 nodes"
+    }
+   ]
+  },
+  {
+   "w": 390,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "89/85 %",
+     "verdict": "WARN",
+     "note": "busy host: timing verdicts capped at WARN, rerun when idle"
+    },
+    {
+     "name": "total transfer",
+     "value": "238 KiB",
+     "verdict": "PASS",
+     "note": "html 15.1K  css 5.2K  js 143.3K  img 58.8K  other 15.6K"
+    },
+    {
+     "name": "requests",
+     "value": 19,
+     "verdict": "PASS",
+     "note": "11 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "58.8 KiB",
+     "verdict": "PASS",
+     "note": "9 files"
+    },
+    {
+     "name": "largest image",
+     "value": "18.1 KiB",
+     "verdict": "PASS",
+     "note": "_next/image?url=%2Fprojects%2Ftagumfare.webp&w=384&q=75"
+    },
+    {
+     "name": "JS parsed",
+     "value": "472.1 KiB",
+     "verdict": "WARN",
+     "note": "6 files, 143.3K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "5.2 KiB",
+     "verdict": "PASS",
+     "note": "1 files"
+    },
+    {
+     "name": "font families",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "font files",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0K"
+    },
+    {
+     "name": "images without width+height",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0 contexts made in all"
+    },
+    {
+     "name": "long tasks",
+     "value": 1,
+     "verdict": "PASS",
+     "note": "runs 3, 1..1, busy host, max 107ms"
+    },
+    {
+     "name": "blocking time",
+     "value": "38 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 27..57, busy host ms; at load 38ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "328 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 316..496, busy host"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "340 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 316..496, busy host, img"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.000",
+     "verdict": "PASS",
+     "note": "runs 3, 0.000..0.000; at load 0.000"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "19.4 screens",
+     "verdict": "PASS",
+     "note": "DOM 677 nodes"
+    }
+   ]
+  }
+ ]
+}

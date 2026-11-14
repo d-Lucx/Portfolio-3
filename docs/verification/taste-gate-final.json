@@ -1,0 +1,2137 @@
+{
+  "fails": [
+    {
+      "check": "hero-fill",
+      "where": "section#featured \"A closer look at the work.\"",
+      "msg": "the next section shows on the first screen: it starts at 725px on a 900px screen (the hero ends at 725px)",
+      "fix": "let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-fill"
+      ],
+      "wheres": [
+        "section#featured \"A closer look at the work.\""
+      ]
+    },
+    {
+      "check": "caption",
+      "where": "div.archive-grid > article.archive-card:nth-of-type(25) > div.archive-copy > p \"A reserved project concept. The reposito\"",
+      "msg": "a line about the page, not the client: \"has no implementation yet\" (and 1 more like it: \"A reserved project conce\")",
+      "fix": "no line under a picture: never how it was made, what it shows, what is missing or what will follow (credits: one footer line)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "caption"
+      ],
+      "wheres": [
+        "div.archive-grid > article.archive-card:nth-of-type(25) > div.archive-copy > p \"A reserved project concept. The reposito\""
+      ]
+    },
+    {
+      "check": "nav",
+      "where": "header.site-header.wrap > a.brand \"rc RENE CHRISTIAN Computer Engineering\"",
+      "msg": "nav link wraps to a second line",
+      "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "nav"
+      ],
+      "wheres": [
+        "header.site-header.wrap > a.brand \"rc RENE CHRISTIAN Computer Engineering\""
+      ]
+    },
+    {
+      "check": "spill",
+      "where": "section#home > div.hero-grid > div.hero-scene > div.screen-layer.secondary-layer \"● ● ● OmniPoint / register\"",
+      "msg": "runs 28px past the right edge of the panel it sits on (div.hero-grid > div.hero-scene > div.screen-layer.main-layer > img)",
+      "fix": "keep the box inside the panel it starts on: shrink it, or grow the panel to hold it",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "spill"
+      ],
+      "wheres": [
+        "section#home > div.hero-grid > div.hero-scene > div.screen-layer.secondary-layer \"● ● ● OmniPoint / register\""
+      ]
+    },
+    {
+      "check": "no-visual",
+      "where": "section#about \"Connecting the pieces.\"",
+      "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+      "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "no-visual"
+      ],
+      "wheres": [
+        "section#about \"Connecting the pieces.\""
+      ]
+    },
+    {
+      "check": "text-only",
+      "where": "section#activity \"An ongoing practice.\"",
+      "msg": "the closing section is only text: no picture, icon, mock or effect in it",
+      "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "text-only"
+      ],
+      "wheres": [
+        "section#activity \"An ongoing practice.\""
+      ]
+    },
+    {
+      "check": "button-styles",
+      "where": "(the page)",
+      "msg": "3 button styles on the page: pill, outline #dcded5 x1 (\"GitHub ↗\"); soft, fill #c9f388 x1 (\"Contact me ↗\"); soft, fill #173c30 x1 (\"Contact me ↗\")",
+      "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "button-styles"
+      ],
+      "wheres": [
+        "(the page)"
+      ]
+    },
+    {
+      "check": "cta",
+      "where": "section#activity \"An ongoing practice.\"",
+      "msg": "the last section before the footer ends with no button",
+      "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "cta"
+      ],
+      "wheres": [
+        "section#activity \"An ongoing practice.\""
+      ]
+    },
+    {
+      "check": "copy-headings",
+      "where": "h2#featured-heading \"A closer look at the work.\"",
+      "msg": "\"A closer look at the work.\" names no product, part, place or section (9 headings like it; at most one brand line per page) (and 8 more like it: \"Bej Hub\", \"OmniPoint\", \"Smart Pill Dispenser\", \"The wider collection.\", ...)",
+      "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "copy-headings"
+      ],
+      "wheres": [
+        "h2#featured-heading \"A closer look at the work.\""
+      ]
+    },
+    {
+      "check": "heading-scale",
+      "where": "h3#title-bej-hub \"Bej Hub\"",
+      "msg": "h3 headings in 4 sizes, 18px (\"AI workflows\") to 38px (x2.11)",
+      "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "heading-scale"
+      ],
+      "wheres": [
+        "h3#title-bej-hub \"Bej Hub\""
+      ]
+    },
+    {
+      "check": "off-grid",
+      "where": "article#case-omnipoint > div.case-copy > ul.stack-list > li:nth-of-type(3) \"SQLite\"",
+      "msg": "left edge at 219px, 12px off a common edge of its section at 207px (3 elements, like span); 1 more in this section off the grid too (li:nth-of-type(3) at 225px)",
+      "fix": "move it onto the page margin, or the column edge its section uses",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "off-grid"
+      ],
+      "wheres": [
+        "article#case-omnipoint > div.case-copy > ul.stack-list > li:nth-of-type(3) \"SQLite\""
+      ]
+    },
+    {
+      "check": "text-contrast",
+      "where": "div.case-copy > div.case-facts > div:nth-of-type(1) > p \"I built this personal project with AI as\"",
+      "msg": "body text in #526056 on #f5f5ef reads 6.06:1 (needs 7:1); 6 like it, like \"In a live Gemini run, \", \"I created this persona\", \"Local verification pas\"",
+      "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "text-contrast"
+      ],
+      "wheres": [
+        "div.case-copy > div.case-facts > div:nth-of-type(1) > p \"I built this personal project with AI as\""
+      ]
+    },
+    {
+      "check": "text-contrast",
+      "where": "div.archive-grid > article.archive-card.with-media:nth-of-type(1) > div.archive-copy > p \"A pixel studio for assigning AI missions\"",
+      "msg": "body text in #5c685e on #ffffff reads 5.84:1 (needs 7:1); 7 like it, like \"An offline retail syst\", \"A Raspberry Pi device \", \"A fish-tank monitoring\"",
+      "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "text-contrast"
+      ],
+      "wheres": [
+        "div.archive-grid > article.archive-card.with-media:nth-of-type(1) > div.archive-copy > p \"A pixel studio for assigning AI missions\""
+      ]
+    },
+    {
+      "check": "text-contrast",
+      "where": "section#about > div.about-grid > div:nth-of-type(1) > p:nth-of-type(2) \"My projects span AI agent workflows, off\"",
+      "msg": "body text in #5d6961 on #f5f5ef reads 5.25:1 (needs 7:1)",
+      "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "text-contrast"
+      ],
+      "wheres": [
+        "section#about > div.about-grid > div:nth-of-type(1) > p:nth-of-type(2) \"My projects span AI agent workflows, off\""
+      ]
+    },
+    {
+      "check": "text-contrast",
+      "where": "section#activity > div.calendar-shell.calendar-unavailable > p \"The projects and their evidence are avai\"",
+      "msg": "body text in #5d6961 on #edf0e6 reads 4.98:1 (needs 7:1)",
+      "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "text-contrast"
+      ],
+      "wheres": [
+        "section#activity > div.calendar-shell.calendar-unavailable > p \"The projects and their evidence are avai\""
+      ]
+    },
+    {
+      "check": "hero-enter",
+      "where": "section#home",
+      "msg": "the hero does not enter on load: no head line setting html.m-enter (motion.md, The hero's entrance)",
+      "fix": "put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-enter"
+      ],
+      "wheres": [
+        "section#home"
+      ]
+    },
+    {
+      "check": "moment-none",
+      "where": "(the page)",
+      "msg": "a software page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+      "fix": "deal one (moments.mjs pick --page software) and mount it in its own section",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "moment-none"
+      ],
+      "wheres": [
+        "(the page)"
+      ]
+    },
+    {
+      "check": "hidden-content",
+      "where": "section#home > div.hero-bottom > button.motion-toggle \"Pause animation Ⅱ\"",
+      "msg": "with scripts switched off (a blocked or failed script) it stays hidden on the first screen, 1.5 s after load (visibility hidden): the page shows it only when a script reveals it",
+      "fix": "show the content at rest: the hidden state only under a class the script adds on its live path, never in the plain CSS (prefers-reduced-motion and a script that never runs show the finished page)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hidden-content"
+      ],
+      "wheres": [
+        "section#home > div.hero-bottom > button.motion-toggle \"Pause animation Ⅱ\""
+      ]
+    },
+    {
+      "check": "hero-screen",
+      "where": "section#home \"Computer Engineering Student · AI Automa\"",
+      "msg": "the hero ends at 725px on a 900px screen, 175px above the fold: it ends at the fold, 1px either way (SR-1)",
+      "fix": "make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-screen"
+      ],
+      "wheres": [
+        "section#home \"Computer Engineering Student · AI Automa\""
+      ]
+    },
+    {
+      "check": "hero-screen",
+      "where": "section#featured \"01 / Selected workA closer look at the w\"",
+      "msg": "175px of the next section shows on the first screen (from 725px on a 900px screen): nothing below the hero shows at load (SR-1)",
+      "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-screen"
+      ],
+      "wheres": [
+        "section#featured \"01 / Selected workA closer look at the w\""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "section#projects \"02 / Project indexThe wider collection.S\"",
+      "msg": "the section is 4085px tall (4.5 screens), 2285px over two screens (1800px): every section after the hero is one screen or two, 2px either way (SR-2)",
+      "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height",
+        "screen-height"
+      ],
+      "wheres": [
+        "section#projects \"02 / Project indexThe wider collection.S\"",
+        "#projects section.project-index.section \"02 / Project indexThe wider coll\""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "section#featured \"01 / Selected workA closer look at the w\"",
+      "msg": "the section is 2184px tall (2.4 screens), 384px over two screens (1800px): every section after the hero is one screen or two, 2px either way (SR-2)",
+      "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height",
+        "screen-height"
+      ],
+      "wheres": [
+        "section#featured \"01 / Selected workA closer look at the w\"",
+        "#featured section.featured.section \"01 / Selected workA closer look \""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "footer#contact \"05 / ContactLet’s talkAI automation.Have\"",
+      "msg": "the section is 522px tall (0.6 screens), 378px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 2 more like it: \"04 / GitHub activityAn o\", \"03 / The engineerConnect\") (SR-2)",
+      "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height"
+      ],
+      "wheres": [
+        "footer#contact \"05 / ContactLet’s talkAI automation.Have\""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "section#activity \"04 / GitHub activityAn ongoing practice.\"",
+      "msg": "the section starts at 7696px, 404px above the screen grid (9 x 900px): sections start on whole screens (SR-2)",
+      "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height",
+        "screen-short",
+        "screen-height"
+      ],
+      "wheres": [
+        "section#activity \"04 / GitHub activityAn ongoing practice.\"",
+        "#activity section.activity.section \"04 / GitHub activityAn ongoing p\""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "section#about \"03 / The engineerConnecting the pieces.I\"",
+      "msg": "the section starts at 6994px, 206px above the screen grid (8 x 900px): sections start on whole screens (and 3 more like it: \"05 / ContactLet’s talkAI\", \"01 / Selected workA clos\", \"Computer Engineering Stu\") (SR-2)",
+      "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height",
+        "screen-short",
+        "screen-height"
+      ],
+      "wheres": [
+        "section#about \"03 / The engineerConnecting the pieces.I\"",
+        "#about section.about.section \"03 / The engineerConnecting the \""
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "article#case-bej-hub \"01AI workflowBej HubTurn a writing reque\"",
+      "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+      "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "article#case-bej-hub \"01AI workflowBej HubTurn a writing reque\""
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "article#case-omnipoint \"02Software reliabilityOmniPointKeep an o\"",
+      "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+      "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "article#case-omnipoint \"02Software reliabilityOmniPointKeep an o\""
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "article#case-pill-dispenser \"03Embedded automationSmart Pill Dispense\"",
+      "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (and 1 more like it: \"All work29AI7Software28H\") (SR-3)",
+      "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "article#case-pill-dispenser \"03Embedded automationSmart Pill Dispense\""
+      ]
+    },
+    {
+      "check": "one-section",
+      "where": "h2#activity-heading \"An ongoing practice.\"",
+      "msg": "the screen at scroll 7200px (stride 8) shows 404px of section 5 and the heading of section 5 whole and the content of 2 sections, over 24px each beside section 4: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+      "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "one-section"
+      ],
+      "wheres": [
+        "h2#activity-heading \"An ongoing practice.\""
+      ]
+    },
+    {
+      "check": "one-section",
+      "where": "section#activity \"04 / GitHub activityAn ongoing practice.\"",
+      "msg": "the screen at scroll 7906px (the top of section 6) shows 378px of section 5 and the content of 2 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+      "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "one-section"
+      ],
+      "wheres": [
+        "section#activity \"04 / GitHub activityAn ongoing practice.\"",
+        "section#activity > div.calendar-shell.calendar-unavailable \"d-Lucx / GitHubActivity isn’t available \""
+      ]
+    },
+    {
+      "check": "one-section",
+      "where": "h2#contact-heading \"Let’s talkAI automation.\"",
+      "msg": "the screen at scroll 7696px (the top of section 5) shows 312px of section 6 and the heading of section 6 whole and the content of 2 sections, over 24px each beside section 5: a screen shows one section (another may peek 8px, 24px WARN) (and 5 more like it: scroll 108px, scroll 2700px, scroll 6300px) (SR-4)",
+      "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "one-section"
+      ],
+      "wheres": [
+        "h2#contact-heading \"Let’s talkAI automation.\""
+      ]
+    },
+    {
+      "check": "one-section",
+      "where": "footer#contact \"05 / ContactLet’s talkAI automation.Have\"",
+      "msg": "a <footer> sits directly in <main>: every part of <main> is a <section> (SR-4)",
+      "fix": "put every block of <main> in a <section>, and give a band its own section instead of a ground inside one",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "one-section"
+      ],
+      "wheres": [
+        "footer#contact \"05 / ContactLet’s talkAI automation.Have\""
+      ]
+    },
+    {
+      "check": "one-heading",
+      "where": "h2#activity-heading \"An ongoing practice.\"",
+      "msg": "headings of two sections show whole on one screen at 7 of 159 scroll positions (4.4%; at scroll 7000, 7050, 7100, 7650px), here with \"Connecting the pieces.\": at most 3% on a desktop (SR-5)",
+      "fix": "make the sections one screen tall so their headings sit a screen apart and two never share one",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "one-heading"
+      ],
+      "wheres": [
+        "h2#activity-heading \"An ongoing practice.\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#home \"Computer Engineering Student · AI Automa\"",
+      "msg": "the content of section 1 runs 123px from the left and 118px from the right (read from its outermost blocks: no .wrap): the page's container starts at 75px; 123 and 118px are not one margin; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+      "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#home \"Computer Engineering Student · AI Automa\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "header.site-header.wrap \"Skip to contentrcRene ChristianComputer \"",
+      "msg": "a <header> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "header.site-header.wrap \"Skip to contentrcRene ChristianComputer \""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#featured \"01 / Selected workA closer look at the w\"",
+      "msg": "the section needs exactly one in-flow child .wrap (it has 4 in-flow children, 0 .wrap) (and 4 more like it: \"02 / Project indexThe wi\", \"03 / The engineerConnect\", \"04 / GitHub activityAn o\") (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#featured \"01 / Selected workA closer look at the w\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#activity > div.calendar-shell.calendar-unavailable > span.calendar-account \"d-Lucx / GitHub\"",
+      "msg": "3 text blocks start on a left line at x 106, 31px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 842) (also \"Activity isn’t available right n\", \"The projects and their evidence \") (SR-6)",
+      "fix": "start the text on the container's left, or on the one split line every split shares",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#activity > div.calendar-shell.calendar-unavailable > span.calendar-account \"d-Lucx / GitHub\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "article#case-bej-hub > div.case-copy > ul.stack-list > li:nth-of-type(1) \"TypeScript\"",
+      "msg": "3 text blocks start on a left line at x 82, 7px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 842) (also \"TypeScript\", \"Raspberry Pi\") (SR-6)",
+      "fix": "start the text on the container's left, or on the one split line every split shares",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "article#case-bej-hub > div.case-copy > ul.stack-list > li:nth-of-type(1) \"TypeScript\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#home > div.hero-bottom \"Software × Hardware × AIExplore / Build \"",
+      "msg": "a box over half the container wide runs 123-1317px, not on the container's lines at 123-1322px (SR-6)",
+      "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#home > div.hero-bottom \"Software × Hardware × AIExplore / Build \""
+      ]
+    },
+    {
+      "check": "row-lines",
+      "where": "section#projects > div.archive-grid \"AI / SoftwarePrototypeBej HubA pixel stu\"",
+      "msg": "a row of 2 items: its last item ends at 928px, the container's right line at 1365px (2px either way) (SR-7)",
+      "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "row-lines"
+      ],
+      "wheres": [
+        "section#projects > div.archive-grid \"AI / SoftwarePrototypeBej HubA pixel stu\""
+      ]
+    },
+    {
+      "check": "split-pair",
+      "where": "article#case-pill-dispenser \"03Embedded automationSmart Pill Dispense\"",
+      "msg": "the two columns of the split start 71px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+      "fix": "top-align both columns of the split (align-items: start)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "split-pair"
+      ],
+      "wheres": [
+        "article#case-pill-dispenser \"03Embedded automationSmart Pill Dispense\""
+      ]
+    },
+    {
+      "check": "split-pair",
+      "where": "article#case-omnipoint \"02Software reliabilityOmniPointKeep an o\"",
+      "msg": "the two columns of the split start 54px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+      "fix": "top-align both columns of the split (align-items: start)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "split-pair"
+      ],
+      "wheres": [
+        "article#case-omnipoint \"02Software reliabilityOmniPointKeep an o\""
+      ]
+    },
+    {
+      "check": "split-pair",
+      "where": "article#case-bej-hub \"01AI workflowBej HubTurn a writing reque\"",
+      "msg": "the two columns of the split start 41px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+      "fix": "top-align both columns of the split (align-items: start)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "split-pair"
+      ],
+      "wheres": [
+        "article#case-bej-hub \"01AI workflowBej HubTurn a writing reque\""
+      ]
+    },
+    {
+      "check": "split-pair",
+      "where": "section#home > div.hero-grid \"Code. Systems.Automation.I’m Rene Christ\"",
+      "msg": "the split does not run edge to edge on the container: its right column ends at 1317px, the container's right at 1322px (SR-8)",
+      "fix": "run the split from the container's left line to its right line",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "split-pair"
+      ],
+      "wheres": [
+        "section#home > div.hero-grid \"Code. Systems.Automation.I’m Rene Christ\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#home h1 \"Code. Systems.Automation.\"",
+      "msg": "starts at x 123; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#home h1 \"Code. Systems.Automation.\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#home p.hero-intro \"I’m Rene Christian.\"",
+      "msg": "starts at x 123; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#home p.hero-intro \"I’m Rene Christian.\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#home p.hero-description \"I build AI workflows and softwar\"",
+      "msg": "starts at x 123; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#home p.hero-description \"I build AI workflows and softwar\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#featured p \"Three projects. My contribution,\"",
+      "msg": "starts at x 1165; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#featured p \"Three projects. My contribution,\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"Software, hardware, AI experimen\"",
+      "msg": "starts at x 1139.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"Software, hardware, AI experimen\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Bej Hub\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Bej Hub\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A pixel studio for assigning AI \"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A pixel studio for assigning AI \""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"TypeScriptDiscord.jsGeminiNext.j\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"TypeScriptDiscord.jsGeminiNext.j\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Smart Pill Dispenser\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Smart Pill Dispenser\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A Raspberry Pi device connecting\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A Raspberry Pi device connecting\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"Raspberry PiPythonSMSTelegram\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"Raspberry PiPythonSMSTelegram\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Raspberry Pi / Arduino Fish Tank\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Raspberry Pi / Arduino Fish Tank\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"An embedded project connecting w\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"An embedded project connecting w\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"Raspberry PiArduino UnoPythonSen\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"Raspberry PiArduino UnoPythonSen\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"MATLAB SVD Image Compression\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"MATLAB SVD Image Compression\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"An image-processing experiment u\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"An image-processing experiment u\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"MATLABSVDLinear algebra\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"MATLABSVDLinear algebra\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"FormSight\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"FormSight\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A computer-vision prototype for \"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A computer-vision prototype for \""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"PythonFastAPIOpenCVYOLO\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"PythonFastAPIOpenCVYOLO\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Pundo 2\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Pundo 2\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A personal-finance app exploring\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A personal-finance app exploring\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"Next.jsReactTypeScriptGemini\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"Next.jsReactTypeScriptGemini\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Student Grading Software\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Student Grading Software\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A desktop project for organizing\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A desktop project for organizing\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"JavaSQL\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"JavaSQL\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Verilog Dice Game\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Verilog Dice Game\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A digital dice-game experiment u\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A digital dice-game experiment u\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"VerilogLFSRModelSim\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"VerilogLFSRModelSim\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Genetic Algorithm Snake\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Genetic Algorithm Snake\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A game-playing experiment that e\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A game-playing experiment that e\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"PythonPygameGenetic algorithms\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"PythonPygameGenetic algorithms\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"8086 Calculator\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"8086 Calculator\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"An assembly-language calculator \"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"An assembly-language calculator \""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"AssemblyEMU8086\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"AssemblyEMU8086\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Divvy\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Divvy\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A personal-finance web project f\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A personal-finance web project f\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"ReactTypeScriptVite\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"ReactTypeScriptVite\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"FreelanceFlow\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"FreelanceFlow\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A web project exploring project \"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A web project exploring project \""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"Next.jsTypeScript\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"Next.jsTypeScript\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Bej Planner\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Bej Planner\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A mobile planner prototype with \"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A mobile planner prototype with \""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"React NativeExpoJavaScript\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"React NativeExpoJavaScript\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"MLBB Pick & Ban Overlay\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"MLBB Pick & Ban Overlay\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A broadcast-overlay project for \"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A broadcast-overlay project for \""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"JavaScriptHTMLCSSNode.js\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"JavaScriptHTMLCSSNode.js\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"MLBB Tournament Overlay\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"MLBB Tournament Overlay\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"An esports broadcast project exp\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"An esports broadcast project exp\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"OCRBroadcast overlays\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"OCRBroadcast overlays\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"TourneyForge\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"TourneyForge\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"An esports graphics project comb\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"An esports graphics project comb\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"Next.jsTypeScriptFabric.jsOBS We\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"Next.jsTypeScriptFabric.jsOBS We\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Asay\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Asay\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A reserved project concept. The \"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A reserved project concept. The \""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Alagad\"",
+      "msg": "starts at x 972.3; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Alagad\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects h3 \"Bej Vault\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects h3 \"Bej Vault\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects p \"A knowledge workspace for organi\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects p \"A knowledge workspace for organi\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#projects ul.mini-stack \"ObsidianMarkdown\"",
+      "msg": "starts at x 99; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#projects ul.mini-stack \"ObsidianMarkdown\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#about h3 \"AI workflows\"",
+      "msg": "starts at x 818.2; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#about h3 \"AI workflows\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#about p \"Gemini · TypeScript · Discord.js\"",
+      "msg": "starts at x 818.2; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#about p \"Gemini · TypeScript · Discord.js\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#about h3 \"Software & data\"",
+      "msg": "starts at x 818.2; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#about h3 \"Software & data\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#about p \"Node.js · React · SQLite · Postg\"",
+      "msg": "starts at x 818.2; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#about p \"Node.js · React · SQLite · Postg\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#about h3 \"Embedded integration\"",
+      "msg": "starts at x 818.2; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#about h3 \"Embedded integration\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#about p \"Raspberry Pi · Python · SMS · Te\"",
+      "msg": "starts at x 818.2; the lines are 75 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#about p \"Raspberry Pi · Python · SMS · Te\""
+      ]
+    },
+    {
+      "check": "screen-short",
+      "where": "#home section.hero \"Computer Engineering Student · A\"",
+      "msg": "617px tall; one screen under the nav is 900px",
+      "fix": "make the section one full screen (--h: 1, layout-v4.md section 2)",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "screen-short"
+      ],
+      "wheres": [
+        "#home section.hero \"Computer Engineering Student · A\""
+      ]
+    },
+    {
+      "check": "neighbour",
+      "where": "#home section.hero \"Computer Engineering Student · A\"",
+      "msg": "framed, 51px of #featured section.featured.section \"01 / Selected workA closer look \" shows",
+      "fix": "keep the next section's heading and picture out of this screen",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "neighbour"
+      ],
+      "wheres": [
+        "#home section.hero \"Computer Engineering Student · A\""
+      ]
+    },
+    {
+      "check": "neighbour",
+      "where": "#about section.about.section \"03 / The engineerConnecting the \"",
+      "msg": "framed, 51px of #activity section.activity.section \"04 / GitHub activityAn ongoing p\" shows",
+      "fix": "keep the next section's heading and picture out of this screen",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "neighbour"
+      ],
+      "wheres": [
+        "#about section.about.section \"03 / The engineerConnecting the \""
+      ]
+    },
+    {
+      "check": "hero-fold",
+      "where": "#home section.hero \"Computer Engineering Student · A\"",
+      "msg": "starts at y 108, not under the nav",
+      "fix": "the hero fills the first screen alone, its button inside it",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "hero-fold"
+      ],
+      "wheres": [
+        "#home section.hero \"Computer Engineering Student · A\""
+      ]
+    },
+    {
+      "check": "hero-fold",
+      "where": "#featured section.featured.section \"01 / Selected workA closer look \"",
+      "msg": "shows on the first screen from y 805",
+      "fix": "the hero fills the first screen alone, its button inside it",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "hero-fold"
+      ],
+      "wheres": [
+        "#featured section.featured.section \"01 / Selected workA closer look \""
+      ]
+    }
+  ],
+  "warns": [
+    {
+      "check": "flush",
+      "where": "section#home > div.hero-bottom > button.motion-toggle \"Pause animation Ⅱ\"",
+      "msg": "its button sits 24px above the lower edge of section#home, where the ground changes to section#featured",
+      "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "nav",
+      "where": "header.site-header.wrap > a.brand \"rc RENE CHRISTIAN Computer Engineering\"",
+      "msg": "the nav is lopsided: its first item starts 13px inside the content's edge (75px), while its last ends on the other edge",
+      "fix": "start the nav's first item and end its last on the content's two edges",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "no-visual",
+      "where": "section#projects \"The wider collection.\"",
+      "msg": "pictures, effects and mocks cover 18% of this section; a feature section needs a visual (about 25% or more)",
+      "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "copy-headings",
+      "where": "div.archive-grid > article.archive-card:nth-of-type(4) > div.archive-copy > h3 \"Raspberry Pi / Arduino Fish Tank System\"",
+      "msg": "the card title \"Raspberry Pi / Arduino Fish Tank System\" names no product, part, place or section (2 card titles like it) (and 1 more like it: \"MLBB Pick & Ban Overlay\")",
+      "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "copy-buttons",
+      "where": "header.site-header.wrap > a.header-github \"GitHub ↗\"",
+      "msg": "\"GitHub ↗\" does not start with a verb (book, buy, try, start, get, see...)",
+      "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "copy-actions",
+      "where": "(the page)",
+      "msg": "the main action \"Contact me\" does not read word for word the same in the closing section",
+      "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "col-edge",
+      "where": "article#case-bej-hub > a.case-media \"↗\"",
+      "msg": "the second column starts at 3 places: 686px (section#featured), 718px (section#home), 818px (section#about)",
+      "fix": "start the second column of every split on the same one or two grid columns",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "body-size",
+      "where": "div.case-copy > div.case-facts > div:nth-of-type(1) > p \"I built this personal project with AI as\"",
+      "msg": "15 of 19 paragraphs of running text are set under 16px (14, 15px)",
+      "fix": "set running text at 16px or more",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "section-gaps",
+      "where": "section#home / section#featured",
+      "msg": "104px between these sections, -35% against the median 161px of gaps at a change of ground",
+      "fix": "use one gap between sections (all within 25% of each other)",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "links",
+      "where": "header.site-header.wrap > nav > a:nth-of-type(4) \"Contact ↗\"",
+      "msg": "\"Contact ↗\" goes to #contact, in the footer",
+      "fix": "point every link at a real section, page or file",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "photo-set",
+      "where": "div.archive-grid > article.archive-card.with-media:nth-of-type(16) > a.archive-media > img \"image\"",
+      "msg": "12 photographs in more than one look: lightness from 0.18 to 0.97; saturation from 0.10 to 0.43; warm and cool photographs mixed (b* -6 to +13); the odd one out is image",
+      "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "nav-labels",
+      "where": "header.site-header.wrap > nav > a:nth-of-type(1) \"Projects\"",
+      "msg": "\"Projects\" opens a section headed \"The wider collection.\"",
+      "fix": "name each nav link after the heading of the section it opens",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "nav-labels",
+      "where": "header.site-header.wrap > nav > a:nth-of-type(3) \"Activity\"",
+      "msg": "\"Activity\" opens a section headed \"An ongoing practice.\"",
+      "fix": "name each nav link after the heading of the section it opens",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "nav-labels",
+      "where": "header.site-header.wrap > nav > a:nth-of-type(4) \"Contact ↗\"",
+      "msg": "\"Contact ↗\" opens a section headed \"Let’s talk AI automation.\"",
+      "fix": "name each nav link after the heading of the section it opens",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "link-styles",
+      "where": "footer#contact > div.contact-top > div.contact-action > a.email-link \"renechristianobeja@gmail.com\"",
+      "msg": "text links in 3 looks: no line, regular (6, like \"View projects →\"); no line, bold (22, like \"Review repository ↗\"); underline, regular (1, like \"renechristianobeja@g\")",
+      "fix": "give text links one look wherever they sit: one underline, one weight",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "copy-length",
+      "where": "section#projects \"The wider collection.\"",
+      "msg": "2 sections over 90 words a screen outside the UI mocks (\"The wider collection.\" 140, \"A closer look at the wor\" 137); 114 words a screen across the page (1125 words in 9.9 screens): a tech page says it in about 80 or fewer",
+      "fix": "cut every section to its heading, one line and the product UI: the UI says the rest; no second paragraph, no list of feature sentences",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "photo-repeat",
+      "where": "div.hero-grid > div.hero-scene > div.screen-layer.secondary-layer > img \"image\"",
+      "msg": "the photograph image is shown 13 times on the page: a picture the visitor has already seen",
+      "fix": "show each photograph once: a different picture of what this section names, or none",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "split-align",
+      "where": "article#case-omnipoint \"OmniPoint\"",
+      "msg": "the picture beside \"OmniPoint\" sits centred on a text column 135px taller: its top and bottom line up with nothing",
+      "fix": "set the picture's top on the heading's top (align-items: start), or let it run the column's full height",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "one-screen",
+      "where": "section#about \"Connecting the pieces.\"",
+      "msg": "2 sections are shorter than the screen, so the next one's heading or picture shows with them: \"Connecting the pieces.\" is 702px of the 900px under the nav, and \"An ongoing practice.\" shows below it (\"An ongoing practice.\")",
+      "fix": "give each section the screen (min-height: 100svh less the nav, its content centred), or join two short ones into one",
+      "widths": [
+        1440
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "tap-size",
+      "where": "header.site-header.wrap > a.brand \"rc RENE CHRISTIAN Computer Engineering\"",
+      "msg": "a 187x40px tap target: under the 44px a phone needs",
+      "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+      "widths": [
+        390,
+        320
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "tap-size",
+      "where": "footer#contact > div.contact-top > div.contact-action > a.email-link \"renechristianobeja@gmail.com\"",
+      "msg": "a 179x21px tap target: under the 44px a phone needs",
+      "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+      "widths": [
+        390,
+        320
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "no-visual",
+      "where": "section#home \"Code. Systems. Automation.\"",
+      "msg": "pictures, effects and mocks cover 24% of this section; a feature section needs a visual (about 25% or more)",
+      "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+      "widths": [
+        390
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "body-size",
+      "where": "section#home > div.hero-grid > div.hero-copy > p.hero-description \"I build AI workflows and software projec\"",
+      "msg": "15 of 19 paragraphs of running text are set under 16px (14px)",
+      "fix": "set running text at 16px or more",
+      "widths": [
+        390
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "orphan",
+      "where": "div.archive-grid > article.archive-card:nth-of-type(8) > div.archive-copy > p \"A hand-pose collection and training pipe\"",
+      "msg": "its last line holds only \"D.\"",
+      "fix": "rebalance the text (text-wrap: pretty, or a shorter line) so the last line holds more than one short word",
+      "widths": [
+        390
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "photo-repeat",
+      "where": "article#case-bej-hub > a.case-media > img \"image\"",
+      "msg": "the photograph image is shown 12 times on the page: a picture the visitor has already seen",
+      "fix": "show each photograph once: a different picture of what this section names, or none",
+      "widths": [
+        390
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "grounds",
+      "where": "section#home \"Computer Engineering Student · AI Automa\"",
+      "msg": "4 flat grounds across the page (#173c30 section, #f5f5ef section x5, #ffffff band x29, #edf0e6 band): three at most (the base, a surface, an inverse)",
+      "fix": "three flat grounds at most (the base, one surface, one inverse): lay the other bands on one of them",
+      "widths": [
+        390
+      ],
+      "from": "consistency"
+    },
+    {
+      "check": "copy-stat-strip",
+      "msg": "stat strip x1",
+      "fix": "a strip only of figures the brief gives (a price, hours, a count); otherwise put each number in the sentence it proves, or leave it out (references/copy-tells.md)",
+      "widths": [],
+      "from": "copy",
+      "where": "copy x1: \"29 / 7 / 28 / 6\"",
+      "exact": false
+    }
+  ],
+  "crashed": [],
+  "seconds": {
+    "consistency": 212,
+    "layout": 16
+  }
+}

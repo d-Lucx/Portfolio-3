@@ -133,3 +133,9 @@ All nine secondary references were opened and their initial rendered presentatio
 LinkedIn direct inspection reached its sign-up/auth wall. No live professional details were verified there; education is user-confirmed. Public d-Lucx GitHub profile loaded successfully; no fixed contribution total is copied into site content.
 
 The user’s explicit visual reference overrides random dealers. Accessible content-driven mobile layout overrides rigid screen heights. Authentic evidence and restrained motion override mandatory spectacle or stand-in imagery where these conflict. User-approved real contacts override `.example` conventions. Verification must disclose applicable gate findings and any justified waivers; no finish gate has run because no site exists yet.
+
+## Implementation refinements — 2026-11-14
+
+Preserved approved reference tokens and natural-height layout. Accessibility testing required darkening muted surface text from #65716b to #5d6961; small label contrasts and category-count opacity were corrected. Header and body use equal outer content edges. Motion remains the approved screenshot-layer option A, with pause, reduced-motion, offscreen and hidden-tab handling. No WebGL or unrelated signature effect was added.
+
+Design Taste's exact-screen-height and dealt-effect requirements conflict with the approved reference and full project catalog; the user direction takes precedence. No fake imagery or calendar is inserted to satisfy its visual-count heuristics. Exact automated status, raw findings, performance limits and browser checks are documented in docs/verification/portfolio.md.

@@ -321,3 +321,16 @@ Target repository: [d-Lucx/Portfolio-3](https://github.com/d-Lucx/Portfolio-3).
 - Connected GitHub metadata was refreshed: 26 repositories accessible for d-Lucx; target Portfolio-3 now contains the original prompt on main. Preserve this remote work rather than treating the repository as empty. Asay and Alagad are empty and must be represented as concepts, not completed applications.
 - Missing actual media for an archive entry should yield an intentional text entry, not simulated screenshots or dead placeholder frames. Private repositories receive a truthful status rather than a recruiter-inaccessible repository CTA. The three featured projects retain authentic selected media.
 - Writing-plans invoked; implementation plan saved to `docs/superpowers/plans/2026-11-14-portfolio-implementation.md`. The workflow requires plan review and execution-method selection before final-site implementation. Native execution in this session is recommended; no site scaffold/dependencies were installed.
+
+## Implementation progress — 2026-11-14
+
+- User authorized implementation of the approved brief and single-page Vercel-targeted plan.
+- Confirmed: Divvy and FreelanceFlow screenshots contain demonstration data and may be published.
+- Implemented 29 included projects with overlapping category navigation; all four exclusions retained. Eight authentic captures/photos are included. Remaining archive entries are text-led until publishable screenshots are available.
+- Implemented Contact me, featured Bej Hub / OmniPoint / Smart Pill Dispenser cases, education/skills, original metadata assets, restrained motion A and accessible contribution states.
+- Independent review found rate-limit cooldown and cache verification gaps; both now have passing behavioral tests. Genuine GitHub data verification remains pending private GITHUB_TOKEN configuration. No deployment is authorized or performed.
+- Automated Design Taste results are recommendations, not approval to override the verified reference: natural section heights, full catalog, layered captures and honest missing-data states remain deliberate decisions. Actual final gate findings are recorded in docs/verification/portfolio.md.
+
+## Live contribution verification — 2026-11-14
+
+The user privately configured the GitHub token. Official GraphQL and actual browser rendering now verified d-Lucx activity: 370 contributions over 365 UTC dates, 2025-11-15 to 2026-11-14. Local cached endpoint requests retained the successful fetch timestamp. No credentials are in the client bundle or Git. Deployment and production domain remain separate, unapproved steps. Design Taste ended OPEN with 114 policy findings; see the full verification report for decisions, checks and limitations.
