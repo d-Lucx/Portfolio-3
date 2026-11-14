@@ -2,9 +2,9 @@
 
 ## Objective
 
-Work with me to design and build a distinctive, professional portfolio for GitHub user **d-Lucx**, positioned as a **Computer Engineering Student focused on AI Automation**. Help visitors understand my expertise, assess my work, and take one clear next step. Establish my target audience and primary call to action with me before writing the final site copy.
+Work with me to design and build a distinctive, professional portfolio for GitHub user **d-Lucx**, positioned as a **Computer Engineering Student focused on AI Automation**, with **AI automation jobs** as the primary target. Help recruiters and hiring managers understand my expertise, assess my work, and take one clear next step. Establish my primary call to action with me before writing the final site copy.
 
-Confirmed positioning: Computer Engineering Student and AI Automation. Proposed editorial direction: lead with practical automation projects and use relevant software and embedded systems work as supporting evidence. Confirm the featured work before making claims about tools, clients, or outcomes.
+Confirmed positioning: Computer Engineering Student and AI Automation. Confirmed target opportunity: AI automation jobs. Proposed editorial direction: lead with practical automation projects and use relevant software and embedded systems work as supporting evidence. Highlight confirmed workflow design, integrations, reliability, and outcomes relevant to hiring. Confirm the featured work before making claims about tools, clients, or outcomes.
 
 Start with discovery and a reviewable design brief. Ask important questions in a short conversation, beginning with the answer that most changes the portfolio. Keep confirmed decisions, proposals, and unanswered questions separate. Update this file as I answer.
 
@@ -44,6 +44,7 @@ Keep a concise content inventory with source URLs and confirmation status. Do no
 - [Kuro10](https://kuro10.vercel.app/)
 - [Binsoy69](https://binsoy69.vercel.app/)
 - [Stun Design](https://stundesign-portfolio.vercel.app/)
+- [Raziel Renz](https://razielrenz.vercel.app/)
 
 Review these for specific supporting ideas. Explain which ideas fit my goals and the primary theme. Build one coherent system; avoid combining unrelated visual styles. Use original implementation and authorized assets rather than copying another creator's code, text, imagery, or signature effect.
 
@@ -51,7 +52,7 @@ Review these for specific supporting ideas. Explain which ideas fit my goals and
 
 Ask these conversationally, beginning with positioning. Read available sources first so I do not have to repeat information they already answer. Record answers here.
 
-1. **Audience and opportunity:** My positioning is Computer Engineering Student and AI Automation. Should the portfolio primarily help me win an internship, an AI automation job, freelance clients, or another opportunity?
+1. **Audience and opportunity — confirmed:** My positioning is Computer Engineering Student and AI Automation, targeting AI automation jobs. Tailor the portfolio to recruiters and hiring managers evaluating relevant projects and practical skills. Clarify specific job titles or industries only if needed to select the work and copy.
 2. **Visitor action:** What should a visitor do next—contact me, review projects, download a résumé, or something else?
 3. **Featured work:** Which three to five projects best support that goal? For each, confirm my role, problem, contribution, stack, outcome, and available demo, repository, screenshots, or hardware photos. Ask only for facts missing from the sources.
 4. **Reference fidelity:** What do I most want to preserve from the primary reference, and what should change? Obtain visual access before finalizing the theme.
@@ -132,4 +133,6 @@ Target repository: [d-Lucx/Portfolio-3](https://github.com/d-Lucx/Portfolio-3).
 - Secondary inspiration URLs have been retained; no individual design findings are claimed yet.
 - UI/UX Pro Max's local design-system search could not run: the Python executable was inaccessible and the `py` launcher was unavailable. Its supplied accessibility and interaction guidance informed this prompt; no generated design system is claimed.
 - Confirmed by me in discovery: position the portfolio around Computer Engineering Student and AI Automation.
-- Target opportunity and audience, selected projects, reference access, final stack, hosting, and production contact details remain open.
+- Confirmed by me in discovery: prioritize AI automation jobs. Recruiters and hiring managers are the proposed primary audience for that goal.
+- Added Raziel Renz to secondary inspiration at my request; its visual design has not yet been inspected.
+- Primary visitor action, selected projects, reference access, final stack, hosting, and production contact details remain open.
