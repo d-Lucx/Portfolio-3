@@ -53,10 +53,22 @@ test('motion respects live preference changes and manual pause', async ({ page }
   await page.emulateMedia({ reducedMotion: 'no-preference' }); await page.goto('/');
   await page.getByRole('button', { name: 'Pause animation' }).click();
   await expect(page.locator('html')).toHaveAttribute('data-motion', 'paused');
+  expect(await page.locator('.main-layer').evaluate(el => getComputedStyle(el).animationName)).toBe('none');
   await page.getByRole('button', { name: 'Resume animation' }).click();
   await expect(page.locator('html')).toHaveAttribute('data-motion', 'running');
+  await expect.poll(() => page.locator('.main-layer').evaluate(el => getComputedStyle(el).animationName)).not.toBe('none');
+  await page.locator('#contact').scrollIntoViewIfNeeded();
+  await expect.poll(() => page.locator('.main-layer').evaluate(el => getComputedStyle(el).animationName)).toBe('none');
   await page.emulateMedia({ reducedMotion: 'reduce' }); await expect(page.getByRole('button', { name: 'Reduced motion on' })).toBeDisabled();
   await expect(page.locator('html')).toHaveAttribute('data-motion', 'reduced');
+});
+test('keyboard focus on native project disclosures is visible and immediately scrolled into view', async ({ page }) => {
+  await page.goto('/'); await page.keyboard.press('Tab');
+  const summary = page.locator('.case-details summary').first(); await summary.focus();
+  await expect(summary).toBeFocused();
+  const visibility = await summary.evaluate(el => { const rect = el.getBoundingClientRect(); const css = getComputedStyle(el); return { inView: rect.top >= 0 && rect.bottom <= innerHeight, outline: css.outlineStyle }; });
+  expect(visibility).toEqual({ inView: true, outline: 'solid' });
+  await page.keyboard.press('Enter'); await expect(page.locator('.case-details').first()).toHaveAttribute('open', '');
 });
 test('required widths keep images loaded and content inside the viewport', async ({ page }) => {
   for (const width of [320, 390, 768, 820, 1024, 1440]) {
