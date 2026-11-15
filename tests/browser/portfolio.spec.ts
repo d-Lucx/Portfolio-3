@@ -29,6 +29,19 @@ test('server HTML retains all projects with JavaScript disabled', async ({ brows
   await page.goto('http://127.0.0.1:3000/'); await expect(page.locator('[data-project-id]')).toHaveCount(28);
   await expect(page.getByRole('link', { name: /Contact me/ }).first()).toBeVisible(); await context.close();
 });
+test('both Para screenshots are available as separate full-size images', async ({ page }) => {
+  await page.goto('/');
+  const para = page.locator('[data-project-id="para"]');
+  await expect(para.locator('img')).toHaveCount(2);
+  const links = para.locator('a.archive-media');
+  await expect(links).toHaveCount(2);
+  for (let index = 0; index < 2; index++) {
+    const [popup] = await Promise.all([page.waitForEvent('popup'), links.nth(index).click()]);
+    await expect(popup).toHaveURL(index === 0 ? /\/projects\/para-destination\.webp$/ : /\/projects\/para-map\.webp$/);
+    await expect(popup.locator('img')).toHaveJSProperty('naturalWidth', 908);
+    await popup.close();
+  }
+});
 test('calendar presents real-date details, zero and stale states without page overflow', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 740 });
   for (const [kind, total] of [['ready', 2], ['ready', 0], ['stale', 2]] as const) {

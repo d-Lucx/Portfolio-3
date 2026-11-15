@@ -8,11 +8,10 @@ function Graph({ snapshot }: { snapshot: ContributionSnapshot }) {
   const offset = new Date(snapshot.from + 'T00:00:00Z').getUTCDay();
   const months = snapshot.days.flatMap((day, index) => index === 0 || day.date.slice(-2) === '01' ? [{ name: new Date(day.date + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' }), column: Math.floor((index + offset) / 7) + 1 }] : []);
   return <>
-    <div className="calendar-scroll" tabIndex={0} role="region" aria-label="Contribution calendar; scroll horizontally to see all weeks" aria-describedby="calendar-scroll-hint"><div className="calendar-months" aria-hidden="true">{months.map((month, i) => <span style={{ gridColumn: month.column }} key={i}>{month.name}</span>)}</div><div className="calendar-plot" role="img" aria-label={`${snapshot.total.toLocaleString('en-US')} contributions from ${formatDate(snapshot.from)} to ${formatDate(snapshot.to)}. Exact daily counts are available below.`}>
+    <div className="calendar-scroll" tabIndex={0} role="region" aria-label="Contribution calendar; scroll horizontally to see all weeks"><div className="calendar-months" aria-hidden="true">{months.map((month, i) => <span style={{ gridColumn: month.column }} key={i}>{month.name}</span>)}</div><div className="calendar-plot" role="img" aria-label={`${snapshot.total.toLocaleString('en-US')} contributions from ${formatDate(snapshot.from)} to ${formatDate(snapshot.to)}. Exact daily counts are available below.`}>
       {Array.from({ length: offset }, (_, i) => <span className="calendar-spacer" aria-hidden="true" key={`pad-${i}`}/>)}
       {snapshot.days.map(day => <span className={`calendar-day level-${day.level}`} key={day.date} aria-hidden="true"/>)}
     </div></div>
-    <p className="scroll-hint" id="calendar-scroll-hint">On smaller screens, scroll within the calendar to see all weeks.</p>
     <div className="calendar-legend"><span>Less</span>{[0, 1, 2, 3, 4].map(level => <span className={`calendar-day level-${level}`} aria-hidden="true" key={level}/>)}<span>More</span></div>
     <ContributionDetails days={snapshot.days}/>
   </>;
