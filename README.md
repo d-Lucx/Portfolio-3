@@ -2,6 +2,8 @@
 
 Single-page portfolio for a Computer Engineering student focused on AI Automation. Next.js App Router, React, TypeScript and custom CSS. The user deployed it to https://rcbej.vercel.app; source updates are pushed to `main` as authorized. Vercel's Git integration controls subsequent deployments.
 
+`vercel.json` explicitly selects Vercel's Next.js framework adapter. This overrides an unset/Other project preset so Vercel packages the Next.js routes and server contribution endpoint rather than treating the repository as a generic static project.
+
 ## Local setup
 
 Use Node 24.22.1 (24.x). Run `npm ci`, copy `.env.example` to `.env.local`, then `npm run dev`. Open http://127.0.0.1:3000. Run `npm run build` followed by `npm start` to inspect the production build.
