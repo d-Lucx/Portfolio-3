@@ -1,6 +1,6 @@
 # Rene Christian — Portfolio 3
 
-Single-page portfolio for a Computer Engineering student focused on AI Automation. Next.js App Router, React, TypeScript and custom CSS; intended for Vercel. Deployment is a separate, currently unauthorized step.
+Single-page portfolio for a Computer Engineering student focused on AI Automation. Next.js App Router, React, TypeScript and custom CSS. The user deployed it to https://rcbej.vercel.app; source updates are pushed to `main` as authorized. Vercel's Git integration controls subsequent deployments.
 
 ## Local setup
 
@@ -11,15 +11,15 @@ Commands: `npm run lint`, `npm run typecheck`, `npm test`, `npm run test:e2e`. B
 ## Configuration
 
 - `GITHUB_TOKEN`: server-only GitHub personal access token for the official GraphQL API. Use minimum read access for public profile activity; private repository access is unnecessary. Never commit the token or send it in chat. Configure separately in Vercel's environment settings before a future deployment. The public endpoint returns only validated aggregate dates/counts/intensity and timestamps, never repository details or credentials.
-- `SITE_URL`: absolute production origin, set after the domain is selected. Canonical URLs and sitemap entries are omitted until set. Search indexing is enabled only when `VERCEL_ENV=production` and `SITE_URL` is configured. Vercel supplies `VERCEL_ENV`.
+- `SITE_URL`: use `https://rcbej.vercel.app`. A bare hostname such as `rcbej.vercel.app` is normalized to HTTPS. Invalid, non-HTTP or credential-bearing values are ignored safely, leaving origin-dependent metadata/indexing disabled instead of crashing the build. Canonical/sitemap use the normalized origin. Search indexing requires `VERCEL_ENV=production` and a valid origin; Vercel supplies `VERCEL_ENV`.
 
 No contact delivery service is needed: Contact me opens the approved email address in the visitor's mail application. No form, analytics, database or CMS is installed.
 
 ## Content and images
 
-Edit identity/contact in `content/profile.ts` and project entries in `content/projects.ts`. Categories overlap: AI, Software and Hardware. The initial unfiltered HTML includes all 29 selected entries. Keep Portfolio, Portfolio-2, thousand-folded-wishes and Pundo excluded; Pundo 2 is a separate included project.
+Edit identity/contact in `content/profile.ts` and project entries in `content/projects.ts`. Categories overlap: AI, Software and Hardware. The initial unfiltered HTML includes all 28 selected entries. Keep Portfolio, Portfolio-2, thousand-folded-wishes and Pundo excluded; Pundo 2 is a separate included project. The former Fish Tank entry was removed because the user confirmed it duplicates Techlapia.
 
-The three featured cases require confirmed contribution/outcome text. Archive concepts/prototypes retain their status and do not imply completed client work. Add a `media` record only when a publishable actual capture exists. Eight actual previews/photos are available; 21 entries currently use text. Public repository links are shown only for public repositories. Bej Hub's owner-only demo is intentionally omitted.
+The three featured cases require confirmed contribution/outcome text. Archive concepts/prototypes retain their status and do not imply completed client work. Add a `media` record only when a publishable actual capture exists. Fourteen actual previews/photos are available; fourteen entries currently use text. Additional local repository captures show configuration, idle, sign-in or onboarding states where live hardware/private accounts were unavailable; they do not imply those integrations were tested. Public repository links are shown only for public repositories. Bej Hub's owner-only demo is intentionally omitted.
 
 For a future n8n project, add an entry only after confirming what was actually built. A draft example (not current portfolio content):
 

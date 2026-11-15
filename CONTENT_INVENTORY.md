@@ -133,3 +133,9 @@ Source: user message containing Discord logs and a screenshot, supplied during d
 - Limitation: clarification repeated before progressing. Do not imply immediate or seamless resolution. Do not claim the 100-word constraint was met without checking.
 - Logs report 3,717 tokens; no cost, benchmark or time-saving claim is approved.
 - Proposed case-study angle: source-conflict handling and human approval within an AI workflow. Final featured selection and public reuse of logs/screenshot remain unapproved. No public asset was created from this attachment.
+
+## Post-deployment corrections — 2026-11-14
+
+- User deployed to https://rcbej.vercel.app and explicitly requested main synchronization. Finished portfolio f1bb45f fast-forwarded to main; scheme-less SITE_URL build failure fixed and pushed as3996ddd after reproducing the exact Invalid URL failure in tests and building with the reported production configuration.
+- User confirmed Raspberry Pi / Arduino Fish Tank System is the same project as Techlapia. Removed duplicate fish-tank id; retain Techlapia, 28 catalog entries.
+- Added six reviewed, actual local repository captures: Techlapia settings, FormSight idle controls, Pundo2 sign-in, Kugi onboarding, and the two MLBB controllers. See ASSET_PROVENANCE.md for exact source revisions/states and limits. No new outcomes or client claims inferred from screenshots.

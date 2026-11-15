@@ -1,40 +1,36 @@
 # Full project index inventory
 
-Source: rendered primary reference, read 2026-11-14, cross-checked against connected GitHub repository metadata. These are catalog entries, not independently verified completion or outcome claims. User requested the broader project collection, excluding Portfolio, Portfolio-2, Thousand Folded Wishes, and Pundo. Pundo 2 remains included. Existing three featured case studies retain their stronger evidence.
+Current catalog after the user confirmed that Raspberry Pi / Arduino Fish Tank System duplicates Techlapia: **28 entries**, 14 with authentic media. Source: original reference, connected repository evidence, confirmed project facts and inspected local captures. Categories describe subject matter, not proficiency.
 
-| Project | Proposed categories | Repository evidence | Media status |
+| Project | Categories | Repository | Media |
 | --- | --- | --- | --- |
-| Raspberry Pi / Arduino Fish Tank System | Software, Hardware | No repository link in source | No actual capture verified yet |
-| Techlapia | Software, Hardware | [Techlapia](https://github.com/d-Lucx/Techlapia) — public | No actual capture verified yet |
-| MATLAB SVD Image Compression | Software | No repository link in source | Candidate image in Portfolio-2; visual review pending |
-| FormSight | Software, AI | [FormSight](https://github.com/d-Lucx/FormSight) — public | No actual capture verified yet |
-| TalkToTheHand | Software, AI | [TalkToTheHand](https://github.com/d-Lucx/TalkToTheHand) — public | No actual capture verified yet |
-| Pundo 2 | Software, AI | [Pundo2](https://github.com/d-Lucx/Pundo2) — public | No actual capture verified yet |
-| Bej Hub | Software, AI | [Bej_Hub](https://github.com/d-Lucx/Bej_Hub) — public | User-supplied actual office screenshot |
-| OmniPoint | Software | [OmniPoint](https://github.com/d-Lucx/OmniPoint) — public | Actual register screenshot reviewed |
-| Student Grading Software | Software | No repository link in source | Candidate image in Portfolio-2; visual review pending |
-| Verilog Gray Code Generator | Software, Hardware | No repository link in source | No actual capture verified yet |
-| Verilog Dice Game | Hardware | No repository link in source | No actual capture verified yet |
-| Genetic Algorithm Snake | Software, AI | No repository link in source | No actual capture verified yet |
-| Dino Game AI | Software, AI | No repository link in source | No actual capture verified yet |
-| 8086 Calculator | Software, Hardware | No repository link in source | No actual capture verified yet |
-| Divvy | Software | [Divvy](https://github.com/d-Lucx/Divvy) — public | Candidate image in Portfolio-2; visual review pending |
-| TagumFare | Software | [TagumFare](https://github.com/d-Lucx/TagumFare) — private | Candidate image in Portfolio-2; visual review pending |
-| FreelanceFlow | Software | [FreelanceFlow](https://github.com/d-Lucx/FreelanceFlow) — private | Candidate image in Portfolio-2; visual review pending |
-| Bej Planner | Software | [bej-planner](https://github.com/d-Lucx/bej-planner) — public | No actual capture verified yet |
-| Smart Pill Dispenser | Software, Hardware | [Pill-Dispenser](https://github.com/d-Lucx/Pill-Dispenser) — public | User-supplied device photo and team CAD |
-| YǒngBǎo | Software | [YongBao](https://github.com/d-Lucx/YongBao) — private | No actual capture verified yet |
-| MLBB Pick & Ban Overlay | Software | [Mobile-Legends-Picking-Banning-Overlay](https://github.com/d-Lucx/Mobile-Legends-Picking-Banning-Overlay) — public | No actual capture verified yet |
-| MLBB Tournament Overlay | Software, AI | [Mobile-Legends-Tournament-Overlay](https://github.com/d-Lucx/Mobile-Legends-Tournament-Overlay) — public | No actual capture verified yet |
-| Kugi | Software | [Kugi](https://github.com/d-Lucx/Kugi) — public | No actual capture verified yet |
-| TourneyForge | Software | [TourneyForge](https://github.com/d-Lucx/TourneyForge) — private | No actual capture verified yet |
-| Asay | Software | [Asay](https://github.com/d-Lucx/Asay) — public; empty repository / concept only | No actual capture verified yet |
-| Luto / Lu2 | Software | [Luto](https://github.com/d-Lucx/Luto) — public | No actual capture verified yet |
-| Alagad | Software | [Alagad](https://github.com/d-Lucx/Alagad) — public; empty repository / concept only | No actual capture verified yet |
-| Bej Vault | Software | [Bej-Vault](https://github.com/d-Lucx/Bej-Vault) — public | No actual capture verified yet |
-| Para | Software, Hardware | [Para](https://github.com/d-Lucx/Para) — public | No actual capture verified yet |
+| Bej Hub | AI, Software | [Public](https://github.com/d-Lucx/Bej_Hub) | [Actual capture](../public/projects/bej-hub.webp) |
+| OmniPoint | Software | [Public](https://github.com/d-Lucx/OmniPoint) | [Actual capture](../public/projects/omnipoint.webp) |
+| Smart Pill Dispenser | Hardware, Software | [Public](https://github.com/d-Lucx/Pill-Dispenser) | [Actual capture](../public/projects/pill-dispenser.webp) |
+| Techlapia | Hardware, Software | [Public](https://github.com/d-Lucx/Techlapia) | [Actual capture](../public/projects/techlapia.webp) |
+| MATLAB SVD Image Compression | Software | No public link confirmed | [Actual capture](../public/projects/svd-compression.webp) |
+| FormSight | AI, Software | [Public](https://github.com/d-Lucx/FormSight) | [Actual capture](../public/projects/formsight.webp) |
+| TalkToTheHand | AI, Software | [Public](https://github.com/d-Lucx/TalkToTheHand) | Text-led; no publishable capture yet |
+| Pundo 2 | AI, Software | [Public](https://github.com/d-Lucx/Pundo2) | [Actual capture](../public/projects/pundo-2.webp) |
+| Student Grading Software | Software | No public link confirmed | [Actual capture](../public/projects/student-grading.webp) |
+| Verilog Gray Code Generator | Hardware, Software | No public link confirmed | Text-led; no publishable capture yet |
+| Verilog Dice Game | Hardware | No public link confirmed | Text-led; no publishable capture yet |
+| Genetic Algorithm Snake | AI, Software | No public link confirmed | Text-led; no publishable capture yet |
+| Dino Game AI | AI, Software | No public link confirmed | Text-led; no publishable capture yet |
+| 8086 Calculator | Hardware, Software | No public link confirmed | Text-led; no publishable capture yet |
+| Divvy | Software | [Public](https://github.com/d-Lucx/Divvy) | [Actual capture](../public/projects/divvy.webp) |
+| TagumFare | Software | Private; no public action | [Actual capture](../public/projects/tagumfare.webp) |
+| FreelanceFlow | Software | Private; no public action | [Actual capture](../public/projects/freelanceflow.webp) |
+| Bej Planner | Software | [Public](https://github.com/d-Lucx/bej-planner) | Text-led; no publishable capture yet |
+| YǒngBǎo | Software | Private; no public action | Text-led; no publishable capture yet |
+| MLBB Pick & Ban Overlay | Software | [Public](https://github.com/d-Lucx/Mobile-Legends-Picking-Banning-Overlay) | [Actual capture](../public/projects/mlbb-pick-ban.webp) |
+| MLBB Tournament Overlay | AI, Software | [Public](https://github.com/d-Lucx/Mobile-Legends-Tournament-Overlay) | [Actual capture](../public/projects/mlbb-tournament.webp) |
+| Kugi | Software | [Public](https://github.com/d-Lucx/Kugi) | [Actual capture](../public/projects/kugi.webp) |
+| TourneyForge | Software | Private; no public action | Text-led; no publishable capture yet |
+| Asay | Software | [Public](https://github.com/d-Lucx/Asay) | Text-led; no publishable capture yet |
+| Luto / Lu2 | Software | [Public](https://github.com/d-Lucx/Luto) | Text-led; no publishable capture yet |
+| Alagad | Software | [Public](https://github.com/d-Lucx/Alagad) | Text-led; no publishable capture yet |
+| Bej Vault | Software | [Public](https://github.com/d-Lucx/Bej-Vault) | Text-led; no publishable capture yet |
+| Para | Software | [Public](https://github.com/d-Lucx/Para) | Text-led; no publishable capture yet |
 
-Categories follow the reference as a starting point and may overlap; they describe subject matter, not proficiency. Para should be Software (mobile), rather than Hardware merely because the app uses phone sensors. Bej Vault is a notes/workspace entry, not a shipped application. Asay and Alagad must be identified as concepts with empty repositories. No private repository should be presented as publicly accessible.
-
-The current Portfolio-3 being built is not an additional completed project in its own index. The source contained 33 entries; the included inventory is 29 entries after the four user exclusions, not a claim that all possible historical work has been discovered. Add any subsequently discovered actual projects to the same data collection.
-
+The user excludes Portfolio, Portfolio-2, thousand-folded-wishes and Pundo. Pundo 2 remains included. Techlapia is the single retained fish-tank project. Asay and Alagad are empty concepts; Bej Vault is a notes workspace; Para is Software/mobile. No mockups, icons, training photos or personal notes substitute for running application evidence. Capture states, crop boundaries and limitations are recorded in ASSET_PROVENANCE.md.

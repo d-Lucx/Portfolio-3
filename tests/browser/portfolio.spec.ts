@@ -11,8 +11,8 @@ test.beforeEach(async ({ page }) => { await page.route('**/api/contributions', r
 test('catalog filters preserve focus, overlapping categories and exclusions', async ({ page }) => {
   await page.goto('/');
   const cards = page.locator('[data-project-id]');
-  await expect(cards).toHaveCount(29);
-  for (const id of ['portfolio', 'portfolio-2', 'thousand-folded-wishes', 'pundo']) await expect(page.locator(`[data-project-id="${id}"]`)).toHaveCount(0);
+  await expect(cards).toHaveCount(28);
+  for (const id of ['portfolio', 'portfolio-2', 'thousand-folded-wishes', 'pundo', 'fish-tank']) await expect(page.locator(`[data-project-id="${id}"]`)).toHaveCount(0);
   await expect(page.locator('[data-project-id="pundo-2"]')).toHaveCount(1);
   const ai = page.getByRole('button', { name: /^AI\s*\d/ });
   await ai.focus(); await page.keyboard.press('Enter');
@@ -21,12 +21,12 @@ test('catalog filters preserve focus, overlapping categories and exclusions', as
   await expect(page.locator('#projects [role="status"]')).toHaveText('7 entries shown');
   await page.getByRole('button', { name: /^Hardware\s*\d/ }).click();
   await expect(page.locator('[data-project-id="pill-dispenser"]')).toBeVisible();
-  await page.getByRole('button', { name: /^All work/ }).click(); await expect(cards).toHaveCount(29);
+  await page.getByRole('button', { name: /^All work/ }).click(); await expect(cards).toHaveCount(28);
   await expect(page.getByRole('link', { name: /Contact me/ }).first()).toHaveAttribute('href', 'mailto:renechristianobeja@gmail.com');
 });
 test('server HTML retains all projects with JavaScript disabled', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false }); const page = await context.newPage();
-  await page.goto('http://127.0.0.1:3000/'); await expect(page.locator('[data-project-id]')).toHaveCount(29);
+  await page.goto('http://127.0.0.1:3000/'); await expect(page.locator('[data-project-id]')).toHaveCount(28);
   await expect(page.getByRole('link', { name: /Contact me/ }).first()).toBeVisible(); await context.close();
 });
 test('calendar presents real-date details, zero and stale states without page overflow', async ({ page }) => {
@@ -70,15 +70,15 @@ test('keyboard focus on native project disclosures is visible and immediately sc
   expect(visibility).toEqual({ inView: true, outline: 'solid' });
   await page.keyboard.press('Enter'); await expect(page.locator('.case-details').first()).toHaveAttribute('open', '');
 });
-test('required widths keep images loaded and content inside the viewport', async ({ page }) => {
-  for (const width of [320, 390, 768, 820, 1024, 1440]) {
+for (const width of [320, 390, 768, 820, 1024, 1440]) {
+  test(`images load and content stays inside the viewport at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 900 }); await page.goto('/');
     await page.locator('#contact').scrollIntoViewIfNeeded(); await page.waitForTimeout(300);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `overflow at ${width}`).toBe(true);
     const images = page.locator('img'); for (const image of await images.all()) { await image.scrollIntoViewIfNeeded(); await expect(image).toHaveJSProperty('complete', true); expect(await image.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0); }
     await page.screenshot({ path: `.verification/screenshots/portfolio-${width}.png`, fullPage: true });
-  }
-});
+  });
+}
 test('WCAG automated checks cover page and expanded activity details', async ({ page }) => {
   await page.route('**/api/contributions', route => route.fulfill({ json: fixture() })); await page.goto('/');
   await page.locator('.daily-details summary').click();
